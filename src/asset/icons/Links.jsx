@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
-const Links = () => {
+const Links = ({ text, to }) => {
   return (
-    <div>Links</div>
-  )
-}
+    <Link to={to} key={text}>
+      {text}
+    </Link>
+  );
+};
 
-export default Links
+export default Links;
