@@ -21,9 +21,9 @@ const navLinks = [
 ];
 const Navbar = () => {
   return (
-    <nav className="">
+    <nav className="flex items-center justify-between sticky top-0 left-0 right-0 py-8 px-14">
       <Logo />
-      <div>
+      <div className="flex">
         <div>
           {navLinks.map((items) => (
             <Links {...items} />

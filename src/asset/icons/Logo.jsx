@@ -2,7 +2,7 @@ import React from "react";
 
 const Logo = () => {
   return (
-    <div>
+    <div className="flex items-center">
       <svg
         width="42"
         height="38"
@@ -29,6 +29,7 @@ const Logo = () => {
           </linearGradient>
         </defs>
       </svg>
+
       <svg
         width="189"
         height="33"
