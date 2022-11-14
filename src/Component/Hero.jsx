@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <main className="mt-20 flex lg:flex-row flex-col-reverse items-center lg:gap-[8rem]  lg:px-14 px-4 py-20 ">
       <div className="flex lg:w-[55%] w-full flex-col gap-10 lg:p-0 p-6">
-        <h1 className="text-[2.5rem] font-semibold text-black leading-[5rem]">
+        <h1 className="lg:text-[2.5rem] text-2xl font-semibold text-black leading-[5rem]">
           Rent a <span className="text-dark">Place</span> away from{" "}
           <span className="text-dark">Home</span> in the
           <span className="text-dark"> Metaverse</span>

@@ -1,4 +1,6 @@
-import React, {useId} from 'react'
+import React, {useId, useState} from 'react';
+import { Like, Star } from '../../asset/icons';
+
 
 const PlaceCard = ({
     image,
@@ -15,11 +17,11 @@ const PlaceCard = ({
     const [liked, setLiked] = useState(false);
     return (
       <section >
-        <img src={`/${relativeUrl ?? 'places'}/${image}.png`} alt="places card" />
+        <img src={image} alt="places card" />
         <Like
           className=""
           fill={liked ? 'red' : '#D7D7D7'}
-          onClick={() => setLiked((prop) => !prop)}
+          onClick={() => setLiked(!liked)}
         />
         <div className=''>
           <small>{title}</small>
@@ -33,7 +35,7 @@ const PlaceCard = ({
           <small>{distance}</small>
           <small>{availability}</small>
         </div>
-        <div className={style.PlacesCard__stars}>
+        <div className=''>
           {starsArr.map((_, i) => (
             <Star key={id + i} />
           ))}
@@ -45,22 +47,6 @@ const PlaceCard = ({
     );
   };
 
-  PlaceCard.defaultProps = {
-    image: 'places1',
-    title: 'Desert king',
-    payment: '1MBT per night',
-    distance: '2345km away',
-    availability: 'available for 2weeks stay',
-    stars: 5,
-  };
-  PlaceCard.propTypes = {
-    image: PropTypes.string,
-    title: PropTypes.string,
-    payment: PropTypes.string,
-    distance: PropTypes.string,
-    availability: PropTypes.string,
-    stars: PropTypes.number,
-    relativeUrl: PropTypes.string,
-  };
+
 
 export default PlaceCard
