@@ -1,10 +1,11 @@
 import React from 'react';
+import comingsoon from  "../asset/images/comingsoon.png"
 
 const ComingSoon = () => {
   return (
-      <div>
-        <h1>Coming Soon</h1>
-        <img src="" alt="Opening Soon Illustration"/>
+      <div className='mt-20 flex justify-center items-center py-20'>
+
+        <img src={comingsoon} alt="coming soon illustration" className=''/>
       </div>
 
   );

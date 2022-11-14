@@ -42,9 +42,7 @@ const Navbar = () => {
             <Links
               {...items}
 
-              onClick={() => {
-                setIsMobile(false);
-              }}
+              
             />
           ))}
         </div>
