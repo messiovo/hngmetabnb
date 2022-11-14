@@ -6,8 +6,8 @@ import hero4 from "../asset/images/hero4.jpg";
 
 const Hero = () => {
   return (
-    <main className="flex lg:flex-row flex-col-reverse items-center lg:gap-[20rem] lg:px-14 px-4 py-20 ">
-      <div className="flex lg:w-2/4 w-full flex-col gap-10">
+    <main className="mt-20 flex lg:flex-row flex-col-reverse items-center lg:gap-[8rem] lg:px-14 px-4 py-20 ">
+      <div className="flex lg:w-[55%] w-full flex-col gap-10">
         <h1 className="text-[2.5rem] font-semibold text-black leading-[5rem]">
           Rent a <span className="text-dark">Place</span> away from{" "}
           <span className="text-dark">Home</span> in the
@@ -32,7 +32,7 @@ const Hero = () => {
           </button>
         </form>
       </div>
-      <div className="lg:w-2/4 flex gap-3">
+      <div className="lg:w-[40%] w-full flex gap-3">
         <div className="flex flex-col gap-3 pt-20">
           <img src={hero2} alt="" />
           <img src={hero4} alt="" />
