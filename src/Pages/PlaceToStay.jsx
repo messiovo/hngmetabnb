@@ -1,5 +1,6 @@
 import React from "react";
 import { PlaceCard } from "../Component/atoms";
+import { Locale } from "../asset/icons";
 
 const contents = [
   "Restuarant",
@@ -145,16 +146,16 @@ const placeDetails = [
 
 const PlaceToStay = () => {
   return (
-    <section className="py-10 lg:px-12 px-4">
-      <div>
+    <section className="py-10 lg:px-12 px-4 mt-20">
+      <div className="grid lg:grid-cols-9 grid-cols-3 gap-4 py-10">
         {contents.map((items) => (
           <button key={items} type="button">
             {items}
           </button>
         ))}
-        <div>
+        <div className="flex gap-2 border border-black/[0.1] py-2 px-4">
           <span>Location</span>
-          <Location />
+          <Locale />
         </div>
       </div>
       <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6">

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Filter = () => (
+const Locale = () => (
   <svg
     width="24"
     height="24"
@@ -82,4 +82,4 @@ const Filter = () => (
     />
   </svg>
 );
-export default Filter;
+export default Locale;
