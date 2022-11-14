@@ -25,7 +25,7 @@ const Navbar = () => {
     setIsMobile(!isMobile);
   };
   return (
-    <nav className="flex lg:px-12 py-6 px-4 justify-between items-center z-10 fixed top-0 left-0 right-0 w-full">
+    <nav className="z-20 bg-white flex lg:px-14 py-6 px-4 justify-between items-center z-10 fixed top-0 left-0 right-0 w-full">
       <Logo />
       <div
         className={`${
