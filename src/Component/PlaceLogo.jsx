@@ -3,7 +3,7 @@ import {MBToken, Metamask, Opensea} from './atoms'
 
 const PlaceLogo = () => {
   return (
-    <section className="">
+    <section className="flex lg:flex-row flex-col justify-between items-center lg:gap-0 gap-4 bg-dark px-12 py-4 ">
       <MBToken />
       <Metamask />
       <Opensea />
