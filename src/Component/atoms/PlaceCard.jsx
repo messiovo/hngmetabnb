@@ -1,4 +1,4 @@
-import React, {useId, useState} from 'react';
+import React, {useId} from 'react';
 import { Like, Star } from '../../asset/icons';
 
 
@@ -9,33 +9,32 @@ const PlaceCard = ({
     distance,
     availability,
     stars,
-    relativeUrl,
   }) => {
     const id = useId();
     const starsArr = Array(stars).fill(null);
     const nullStars = Array(5 - stars).fill(null);
-    const [liked, setLiked] = useState(false);
+
     return (
-      <section >
+      <section className="flex flex-col relative border border-black/[0.1] rounded-lg p-4" >
         <img src={image} alt="places card" />
         <Like
-          className=""
-          fill={liked ? 'red' : '#D7D7D7'}
-          onClick={() => setLiked(!liked)}
+
         />
-        <div className=''>
+        <div className='flex text-sm justify-between pt-4'>
+        <div className='flex flex-col'>
           <small>{title}</small>
           <small>
-            <b>{payment}</b>
+            {distance}
           </small>
         </div>
         <div
-          className=""
+          className="flex flex-col"
         >
-          <small>{distance}</small>
+          <small><b>{payment}</b></small>
           <small>{availability}</small>
         </div>
-        <div className=''>
+        </div>
+        <div className='flex pt-2 gap-1'>
           {starsArr.map((_, i) => (
             <Star key={id + i} />
           ))}

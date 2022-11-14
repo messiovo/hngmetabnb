@@ -70,9 +70,9 @@ const placeDetails = [
   const Places = () => {
     const id = useId();
     return (
-      <section className="lg:px-12 px-4">
-        <h2 className='text-xl lg:text-3xl font-bold text-center py-6'>Inspiration for your next adventure</h2>
-        <div className="">
+      <section className="lg:px-12 px-4 py-10">
+        <h2 className='text-xl lg:text-3xl font-bold text-center pb-6'>Inspiration for your next adventure</h2>
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6">
         {placeDetails.map((items, i) => (
           <PlaceCard key={id + i} {...items} />
         ))}

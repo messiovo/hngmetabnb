@@ -1,5 +1,5 @@
 import React from 'react';
-import { Hero, PlaceLogo, Places} from '../Component';
+import { Hero, PlaceLogo, Places, LearnMore} from '../Component';
 
 const Home = () => {
   return (
@@ -7,6 +7,7 @@ const Home = () => {
    <Hero/>
    <PlaceLogo/>
    <Places/>
+   <LearnMore/>
     </>
   )
 }
