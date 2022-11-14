@@ -69,10 +69,10 @@ const links = [
 ];
 const Footer = () => {
   return (
-    <section className={style.Footer}>
-      <div className={style.Footer__left}>
+    <section >
+      <div >
         <FooterLogo />
-        <div className={style.Footer__left__socials}>
+        <div>
           <Facebook />
           <Instagram />
           <Twitter />

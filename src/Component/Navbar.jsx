@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Links, Logo } from "../asset/icons";
+import { Logo } from "../asset/icons";
+import { Links } from "./atoms";
 
 const navLinks = [
   {

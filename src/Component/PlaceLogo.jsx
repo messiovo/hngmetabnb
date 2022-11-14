@@ -1,5 +1,5 @@
 import React from 'react';
-import {MBToken, Metamask, Opensea} from './atoms'
+import {MBToken, Metamask, Opensea} from '../asset/icons'
 
 const PlaceLogo = () => {
   return (
