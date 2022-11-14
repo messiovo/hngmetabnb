@@ -69,21 +69,21 @@ const links = [
 ];
 const Footer = () => {
   return (
-    <section >
-      <div >
+    <section className='bg-[#1D1D1E] text-white lg:px-12 px-4  py-10 flex lg:flex-row flex-col-reverse lg:gap-0 gap-8'>
+      <div className='flex flex-col gap-6 lg:w-[30%] w-full justify-between lg:items-start items-center ' >
         <FooterLogo />
-        <div>
+        <div className='flex items-center gap-3'>
           <Facebook />
           <Instagram />
           <Twitter />
         </div>
         <p>&copy; 2022 Metabnb</p>
       </div>
-      <div>
+      <div className='flex lg:flex-row flex-col lg:w-[60%] w-full justify-between lg:gap-0 gap-6'>
         {links.map(({ heading, links: link }) => (
           <div key={heading}>
             <h3>{heading}</h3>
-            <div>
+            <div className='flex flex-col gap-4 pt-2'>
               {link.map(({ text, to }) => (
                 <Link to={to} key={text}>
                   <small>{text}</small>
