@@ -153,7 +153,7 @@ const PlaceToStay = () => {
             {items}
           </button>
         ))}
-        <div className="flex gap-2 border border-black/[0.1] py-2 px-4">
+        <div className="flex gap-2 border border-black/[0.1] py-2 px-4 items-center mx-auto">
           <span>Location</span>
           <Locale />
         </div>
