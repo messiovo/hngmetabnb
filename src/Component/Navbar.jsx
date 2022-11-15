@@ -23,12 +23,17 @@ const navLinks = [
 ];
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [popUp, setPopUp] = useState(false)
+  const handlePopUp = () => {
+    setPopUp(prev => !prev)
+  }
   const mobileHandler = () => {
     setIsMobile(!isMobile);
   };
   return (
     <nav className="z-20 bg-white flex lg:px-14 py-6 px-4 justify-between items-center z-10 fixed top-0 left-0 right-0 w-full">
-      <PopUp/>
+      <PopUp popUp={popUp} close={()=> setPopUp(false)}/>
+
       <Logo />
       <div
         className={`${
@@ -49,12 +54,12 @@ const Navbar = () => {
           ))}
         </div>
         <div>
-          <button className="bg-dark block text-white  py-2 px-5 rounded-lg ">
+          <button className="bg-dark block text-white  py-2 px-5 rounded-lg " onClick={handlePopUp}>
             Connect Wallet
           </button>
         </div>
       </div>
-      <div className="w-8 cursor-pointer lg:hidden" onClick={mobileHandler}>
+      <div className="w-8 cursor-pointer lg:hidden" onClick={mobileHandler} onBlur={()=>setIsMobile(false)} tabIndex={5}>
         <span className="w-full h-1 bg-black block "></span>
         <span className="w-full h-1 bg-black block mt-1.5 "></span>
         <span className="w-full h-1 bg-black block mt-1.5   "></span>

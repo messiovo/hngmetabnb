@@ -17,10 +17,10 @@ const LearnMore = () => {
           <span className='text-dark '>Learn more</span>
         </button>
       </div>
-      <div className='lg:w-[50%] lg:relative block mx-auto'>
+      <div className='lg:w-[50%] lg:relative mx-auto lg:block hidden'>
         <img src={image7} alt="" className='lg:w-[60%] 40% lg:absolute lg:z-[1] lg:top-[10rem] lg:left-0' />
-        <img src={image8} alt=""  className='lg:w-[60%] 40% lg:absolute z-[2] lg:left-[15rem] lg:top-[11rem]'/>
-        <img src={image9} alt=""  className='lg:w-[60%] 40% lg:absolute lg:left-[13rem]'/>
+        <img src={image8} alt=""  className='lg:w-[60%] 40% lg:absolute z-[2] lg:left-[15rem] lg:top-[15rem]'/>
+        <img src={image9} alt=""  className='lg:w-[60%] 40% lg:absolute lg:left-[13rem] '/>
 
       </div>
       </section>
