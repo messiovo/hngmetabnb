@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Logo } from "../asset/icons";
 import { Links } from "./atoms";
+import {PopUp} from "."
 
 const navLinks = [
   {
@@ -27,6 +28,7 @@ const Navbar = () => {
   };
   return (
     <nav className="z-20 bg-white flex lg:px-14 py-6 px-4 justify-between items-center z-10 fixed top-0 left-0 right-0 w-full">
+      <PopUp/>
       <Logo />
       <div
         className={`${
@@ -42,7 +44,7 @@ const Navbar = () => {
             <Links
               {...items}
 
-              
+
             />
           ))}
         </div>
