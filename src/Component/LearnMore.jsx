@@ -1,7 +1,6 @@
 import React from 'react'
-import image7 from "../asset/images/image7.png";
-import image8 from "../asset/images/image8.png";
-import image9 from "../asset/images/image9.png";
+import meta from "./atoms/image/meta2.png";
+
 
 const LearnMore = () => {
   return (
@@ -17,10 +16,8 @@ const LearnMore = () => {
           <span className='text-dark '>Learn more</span>
         </button>
       </div>
-      <div className='lg:w-[50%] lg:relative mx-auto lg:block hidden'>
-        <img src={image7} alt="" className='lg:w-[60%] 40% lg:absolute lg:z-[1] lg:top-[10rem] lg:left-0' />
-        <img src={image8} alt=""  className='lg:w-[60%] 40% lg:absolute z-[2] lg:left-[15rem] lg:top-[15rem]'/>
-        <img src={image9} alt=""  className='lg:w-[60%] 40% lg:absolute lg:left-[13rem] '/>
+      <div className='lg:w-[50%] w-full  mx-auto lg:block '>
+        <img src={meta} alt="" className='w-full'/>
 
       </div>
       </section>
