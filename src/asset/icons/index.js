@@ -9,3 +9,6 @@ export { default as Instagram } from "./Instagram";
 export { default as Facebook } from "./Facebook";
 export { default as Twitter } from "./Twitter";
 export { default as Locale } from "./Locale";
+export { default as Load } from "./Load";
+export { default as LeftArrow } from "./LeftArrow";
+export { default as Close } from "./Close";
