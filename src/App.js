@@ -5,11 +5,11 @@ import { Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div className="">
-       <Navbar/>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/*" element={<VerySoon />} />
-      <Route path="/place-to-stay" element={<PlaceToStay />} />
+        <Route path="/place-to-stay" element={<PlaceToStay />} />
       </Routes>
       <Footer />
     </div>
