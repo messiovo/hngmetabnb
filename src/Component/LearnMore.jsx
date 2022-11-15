@@ -4,7 +4,7 @@ import meta from "./atoms/image/meta2.png";
 
 const LearnMore = () => {
   return (
-    <section className='gap-6 lg:px-12 px-4 bg-dark flex flex-col-reverse lg:flex-row lg:h-[90vh]  py-8 justify-between'>
+    <section className='gap-6 lg:px-12 px-4 bg-dark flex flex-col-reverse lg:flex-row  lg:py-16 py-10 justify-between'>
       <div className='text-white lg:w-[40%] w-full flex flex-col items-start gap-6 my-auto'>
         <h2 className='text-3xl font-semibold'>Metabnb NFTs</h2>
         <p>
